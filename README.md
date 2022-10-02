@@ -62,7 +62,7 @@ Test results report link will be sent to the mentioned email id.
 
 ### After running the below command please wait for less than a minute for the execution to complete since all the maven logs are captured in project basedir/mavenlogs.txt file location.
 
-mvn -Dcucumber.filter.tags="@CreateBooking" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"
+```mvn -Dcucumber.filter.tags="@CreateBooking" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"```
 
 
 
@@ -80,6 +80,13 @@ Detailed report can be found in /restful-booker-api-automation-framework/target/
 
 
 ![Screenshot 2022-10-02 at 12 37 28](https://user-images.githubusercontent.com/65211677/193442394-f72f1bfd-003b-493b-8f4d-be0683f113de.png)
+
+
+##  Gitlab integration for CI CT (.gitlab-ci.yml)
+
+- Gitlab source code (https://gitlab.com/shibaharn/restful-booker-api-cucumber-automation-framework) 
+
+
 
 
 
