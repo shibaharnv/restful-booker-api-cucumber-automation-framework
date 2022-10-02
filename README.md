@@ -36,15 +36,35 @@ src
 
 ## Installation and Test Execution
 
-- Clone the repository 
+- Clone the repository with below command
 
-Open the project in any IDE Eclipse/IntelliJ. Run the following command in Terminal and build the project. It will automatically download all the required dependencies.
+```
+git clone -b main https://github.com/shibaharnv/restful-booker-api-cucumber-automation-framework.git
+
+```
+
+
+Open the project in any IDE Eclipse/IntelliJ.
+
+Navigate to "restful-booker-api-cucumber-automation-framework" folder where we have pom.xml 
+
+Run the following command in Terminal and build the project. It will automatically download all the required dependencies.
 
 ```
 $ mvn clean install
 ```
 
-mvn -Dcucumber.filter.tags="@PartialUpdate" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"
+## Execute Tests
+
+Run the below command where "-DRecipientList" parameter value can be updated to your email id.
+
+Test results report link will be sent to the mentioned email id.
+
+### After running the below command please wait for less than a minute since all the maven logs are captured in project basedir/mavenlogs.txt file location.
+
+mvn -Dcucumber.filter.tags="@CreateBooking" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"
+
+Once the execution is done you must be receiving an email with test results link
 
 
 
