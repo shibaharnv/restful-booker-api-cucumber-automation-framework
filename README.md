@@ -76,6 +76,11 @@ Once the execution is done you must be receiving an email with test results link
 
 Detailed report can be found in /restful-booker-api-automation-framework/target/cucumber-html-reports location
 
+![Screenshot 2022-10-02 at 12 37 10](https://user-images.githubusercontent.com/65211677/193442382-72102d96-a4cd-4d6c-bb91-9cc036bbb083.png)
+
+
+![Screenshot 2022-10-02 at 12 37 28](https://user-images.githubusercontent.com/65211677/193442394-f72f1bfd-003b-493b-8f4d-be0683f113de.png)
+
 
 
 
