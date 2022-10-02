@@ -32,6 +32,9 @@ src
       + stepdefinitions             Step definitions for the BDD feature
       + logs                        logs.txt for capturing logs 
 
+## Maven command for execution
+
+mvn -Dcucumber.filter.tags="@PartialUpdate" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"
 
 
 
