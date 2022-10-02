@@ -1,0 +1,16 @@
+cucumber/Options/TestRunner.class
+stepDefinitions/StepDefinition.class
+bdd/apiFramework/PatchPartialUpdate.class
+bdd/apiFramework/GetBookingIdsWithFilters.class
+bdd/apiFramework/GetBookingIdsWithOutFilter.class
+bdd/apiFramework/GetBookingIds.class
+bdd/apiFramework/TestClass.class
+resources/TestDataBuild.class
+bdd/apiFramework/CreateToken.class
+bdd/apiFramework/GetBookingByID.class
+resources/Utils.class
+stepDefinitions/Hooks.class
+bdd/apiFramework/RequestSpecificationtest.class
+bdd/apiFramework/NestedJsonExtraction.class
+bdd/apiFramework/CreateBookingTestClass.class
+bdd/apiFramework/DeleteBookings.class
