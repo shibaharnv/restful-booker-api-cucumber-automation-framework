@@ -90,7 +90,7 @@ Detailed report can be found in /restful-booker-api-automation-framework/target/
 
 
 
-for any queries reach out to shibaharn@gmail.com
+Thanks.Incase of any queries reach out to shibaharn@gmail.com
 
 
 
