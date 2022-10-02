@@ -31,8 +31,18 @@ src
       + resources                   property files,Testdata build and common utility methods for testcases.
       + stepdefinitions             Step definitions for the BDD feature
       + logs                        logs.txt for capturing logs 
+      
+```      
 
-## Maven command for execution
+## Installation and Test Execution
+
+- Clone the repository 
+
+Open the project in any IDE Eclipse/IntelliJ. Run the following command in Terminal and build the project. It will automatically download all the required dependencies.
+
+```
+$ mvn clean install
+```
 
 mvn -Dcucumber.filter.tags="@PartialUpdate" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"
 
