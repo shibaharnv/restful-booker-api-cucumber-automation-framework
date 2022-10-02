@@ -60,7 +60,7 @@ Run the below command where "-DRecipientList" parameter value can be updated to 
 
 Test results report link will be sent to the mentioned email id.
 
-### After running the below command please wait for less than a minute since all the maven logs are captured in project basedir/mavenlogs.txt file location.
+### After running the below command please wait for less than a minute for the execution to complete since all the maven logs are captured in project basedir/mavenlogs.txt file location.
 
 mvn -Dcucumber.filter.tags="@CreateBooking" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"
 
