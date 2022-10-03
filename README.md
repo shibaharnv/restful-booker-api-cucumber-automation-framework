@@ -102,7 +102,7 @@ Detailed report can be found in /restful-booker-api-automation-framework/target/
 
 ##  Gitlab integration for CI CT (.gitlab-ci.yml)
 
-- Gitlab source code (https://gitlab.com/shibaharn/restful-booker-api-cucumber-automation-framework) 
+- Gitlab source code (https://gitlab.com/mynewgroupshibahar/restbooker-api-test-automation-framework) 
 
 ![Screenshot 2022-10-02 at 12 57 48](https://user-images.githubusercontent.com/65211677/193443083-ecc9cb1f-a529-40a4-b967-eba7ad728533.png)
 
