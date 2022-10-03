@@ -1,7 +1,7 @@
-bdd/apiFramework/Email.class
+utilities/Email$1.class
+utilities/Email.class
 pojo/PartialUpdatePrices.class
 pojo/CreateBookingDates.class
-bdd/apiFramework/Email$1.class
 pojo/PartialUpdateNames.class
 pojo/PartialUpdateBookingDates.class
 pojo/PartialUpdateAdditionalNeeds.class

@@ -1,6 +1,6 @@
 Feature: Validating Booker Apis
 
-  @CreateBooking
+  @CreateBooking @Regression
   Scenario Outline: Create a new booking
 
     Given Frame the create_booking Payload with "<firstname>" "<lastname>" "<checkin>" "<checkout>"
@@ -11,20 +11,15 @@ Feature: Validating Booker Apis
       | firstname | lastname | checkin    | checkout   | bookingapi    | httpmethod |
       | fnvalue1  | lnvalue1 | 2018-01-01 | 2018-01-02 | CreateBooking | POST       |
 
-
+  @GetBookingDetailWithID @Regression
   Scenario: Get the booking details with booking id
 
-    Given Booking API is active
+    Given Setting up the request specification for get call
     When The user getting the booking details with "Booking_ID"
     Then Validate if the API call got success with status code 200
 
 
-
-  ######ALL for partial update working
-
-
-
-  @PartialUpdate
+  @PartialUpdate @Regression
   Scenario Outline: Validate paritalUpdateBooking with names for booker API
 
     Given Setting up the request specification for partialUpdateBooking
@@ -36,7 +31,7 @@ Feature: Validating Booker Apis
       | fnames2   | lnames2  |
 
 
-  @PartialUpdate
+  @PartialUpdate @Regression
   Scenario Outline: Validate paritalUpdateBooking with prices for booker API
 
     Given Setting up the request specification for partialUpdateBooking
@@ -48,7 +43,7 @@ Feature: Validating Booker Apis
       | 112        | false       |
 
 
-  @PartialUpdate
+  @PartialUpdate @Regression
   Scenario Outline: Validate paritalUpdateBooking with booking dates for booker API
 
     Given Setting up the request specification for partialUpdateBooking
@@ -60,11 +55,11 @@ Feature: Validating Booker Apis
       | 2020-01-02 | 2020-01-04 |
 
 
-  @PartialUpdate
+  @PartialUpdate @Regression
   Scenario Outline: Validate paritalUpdateBooking with additional needs for booker API
 
     Given Setting up the request specification for partialUpdateBooking
-    When  I partially Update the booking dates with "<additionalneeds>"
+    When  I partially Update the booking needs with "<additionalneeds>"
     Then  I check if the patch values "<additionalneeds>" dates are updated in the response
     Examples:
       | additionalneeds |
@@ -72,7 +67,26 @@ Feature: Validating Booker Apis
       | lunch           |
 
 
-  @DeleteBooking
+  @PartialUpdateNegative @PartialUpdate @Regression
+  Scenario Outline: Validate different error status codes paritalUpdateBooking
+
+    Given Setting up the request specification for partialUpdateBooking
+    When  I partially Update the values with "<parameter1>" "<parameter2>" for <statuscode>
+    Then  Validate the <statuscode> from response
+
+    Examples:
+      | statuscode | parameter1 | parameter2 |
+      | 403        | firstname  | lastname   |
+      | 403        | 2018-01-01 | 2018-02-01 |
+      | 403        | 111        | true       |
+      | 403        | breakfast  | null       |
+      | 400        | abcname    | xyzname    |
+      | 400        | 2018-02-03 | 2018-04-05 |
+      | 400        | 111        | true       |
+      | 400        | dinner     | null       |
+
+
+  @DeleteBooking @Regression
   Scenario Outline: Validate delete booking functionality
 
     Given Setting up the request specification for DeleteBooking
@@ -83,16 +97,20 @@ Feature: Validating Booker Apis
       | DeleteBooking | DELETE     | 404        |
 
 
+  @DeleteBookingNegative @DeleteBooking @Regression
+  Scenario Outline: Validate delete booking functionality
+
+    Given Setting up the request specification for DeleteBooking
+    When  The user calls "<bookingapi>" with "<httpmethod>" to check <statuscode>
+    Then  Validate the <statuscode> from response
+    Examples:
+      | bookingapi    | httpmethod | statuscode |
+      | DeleteBooking | DELETE     | 403        |
+      | DeleteBooking | PUT        | 400        |
+      | DeleteBooking | DELETE     | 405        |
 
 
-
-
-
-
-
-  ### GET ALL BOOKING IDS
-
-  @GetBookingIds
+  @GetBookingIds @Regression
   Scenario: Get all the Bookingids without filter
 
     Given Setting up the request specification for get call
@@ -101,7 +119,20 @@ Feature: Validating Booker Apis
     And   Check if the response contains array of json objects
 
 
-  @GetBookingIds
+  @GetAllBookingIdsNegative @Regression
+  Scenario Outline: Get all the Bookingids without filter
+
+    Given Setting up the request specification for get call
+    When  User hits the getBookingIds endpoint for <statuscode>
+    Then  Validate the <statuscode> from response
+
+
+    Examples:
+      | statuscode |
+      | 500        |
+      | 404        |
+
+  @GetBookingIds @Regression
   Scenario: Get all the Bookingids with name filter
 
     Given Setting up the request specification for get call
@@ -110,18 +141,25 @@ Feature: Validating Booker Apis
     And   Check if the response contains array of json objects
 
 
-  @GetBookingIds
-  Scenario: Get all the Bookingids with date filter
+  @GetBookingIds @Regression
+  Scenario Outline: Get all the Bookingids with name filter
 
     Given Setting up the request specification for get call
-    When  User hits the getBookingIds endpoint with dates
+    When  User hits the getBookingIds name endpoints with "<firstname>" and "<lastname>"
     Then  Validate if the API call got success with status code 200
-    #And   Check if the response contains array of json objects
+    And   Check if the response contains array of json objects
+
+    Examples:
+      | firstname | lastname |
+      | test1     | test2    |
+
+
+
 
 
 
 #
-  @GetBookingIds
+  @GetBookingIds @Regression
   Scenario Outline: Get all the Bookingids with filter
 
     Given Setting up the request specification for get call
@@ -132,6 +170,22 @@ Feature: Validating Booker Apis
     Examples:
       | checkin    | checkout   |
       | 2018-01-01 | 2018-01-02 |
+      | 2018-02-01 | 2018-03-02 |
+
+
+  @GetBookingIdsNegative @GetBookingIds @Regression
+  Scenario Outline: Get all the Bookingids with filter
+
+    Given Setting up the request specification for get call
+    When  The user hits on the getBookingIds with parameters "<parameter1>" and "<parameter2>" for <statuscode>
+    Then  Validate the <statuscode> from response
+
+    Examples:
+      | statuscode | parameter1 | parameter2 |
+      | 404        | zzzz       | xxxx       |
+      | 404        | 2018-01-01 | 2018-02-01 |
+
+
 
 
 
@@ -157,8 +211,19 @@ Feature: Validating Booker Apis
 #      | Lease     | Plan     |        100 | true        | Lunch           | 200  |
 
 
-  ######partial working
 
+  #  @GetBookingIds @Regression
+#  Scenario: Get all the Bookingids with date filter
+#
+#    Given Setting up the request specification for get call
+#    When  User hits the getBookingIds endpoint with dates
+#    Then  Validate if the API call got success with status code 200
+#    #And   Check if the response contains array of json objects
+
+
+
+  ######partial working @PartialUpdate
+  ###@Testing
 #  Scenario Outline: Update a booking in the API
 #    Given Booking API is active
 #    When I UPDATE a booking
@@ -172,6 +237,21 @@ Feature: Validating Booker Apis
 #      | fnames2     | fnames2 |
 #      | fnames3     | fnames3 |
 
+
+
+  ## Negative testing
+#  @PartialUpdateNegative @PartialUpdate
+#  Scenario Outline: Validate different error status codes paritalUpdateBooking
+#
+#    Given Setting up the request specification for partialUpdateBooking
+#    When  I partially Update the booking names for <statuscode> with the "<firstname>" "<lastname>"
+#    Then  Validate the <statuscode> from response
+#
+#    Examples:
+#      | statuscode | firstname  | lastname  |
+#      | 403        | abc | xyz |
+#      | 400        | edf | ghi |
+##      | 404        | firstname3 | lasstname3 |
 
 
 #  Scenario Outline: Do parital update for names for booker API
@@ -191,8 +271,8 @@ Feature: Validating Booker Apis
 #      | fnames3     | fnames3 |
 
 
-
- # Scenario: Validate paritalUpdateBooking with names for booker API
+#  @Testing
+#  Scenario: Validate paritalUpdateBooking with names for booker API
 #
 #    Given Validate if the create booking API is active
 #    When  I partially Update the booking with the values mentioned below
@@ -206,11 +286,7 @@ Feature: Validating Booker Apis
 
 
 
-
-
-
-
-
+#    @Testing
 #  Scenario Outline: Testing sceanrio
 #
 #    Given Testing this <totalprice>

@@ -1,41 +1,26 @@
-[INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for bdd.apiFramework:restful-booker-api-automation-framework:jar:1.0-SNAPSHOT
-[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.fasterxml.jackson.core:jackson-databind:jar -> version 2.13.3 vs 2.13.4 @ line 182, column 17
-[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.json:json:jar -> duplicate declaration of version 20220320 @ line 189, column 17
-[WARNING] 'dependencies.dependency.version' for junit:junit:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 197, column 16
-[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.13.2 vs RELEASE @ line 194, column 17
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
-[INFO] 
-[INFO] ------< bdd.apiFramework:restful-booker-api-automation-framework >------
-[INFO] Building restful-booker-api-automation-framework 1.0-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ restful-booker-api-automation-framework ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/main/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ restful-booker-api-automation-framework ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ restful-booker-api-automation-framework ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ restful-booker-api-automation-framework ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ restful-booker-api-automation-framework ---
-[INFO] 
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[INFO] Running cucumber.Options.TestRunner
-This is set up method.
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "fnvalue1",
+    "lastname": "lnvalue1",
+    "totalprice": 100,
+    "depositpaid": true,
+    "additionalneeds": "Breakfast",
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2018-01-02"
+    }
+}
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -60,7 +45,18 @@ Via: 1.1 vegur
         "additionalneeds": "Breakfast"
     }
 }
-bookingID 3958
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -82,20 +78,23 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-ZuHhjjY26F3PPpXa29OrSfhsKIw"
-Date: Mon, 03 Oct 2022 01:28:21 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=db17b12f36c8614
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "db17b12f36c8614"
+    "firstname": "fnames1",
+    "lastname": "lnames1"
 }
-db17b12f36c8614
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -117,21 +116,23 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-Assertion Passed:Partial name update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-fnCGRjIes0VZ86M1TBBcNEnUEpQ"
-Date: Mon, 03 Oct 2022 01:28:25 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=4ea404779b6930a
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "4ea404779b6930a"
+    "firstname": "fnames2",
+    "lastname": "lnames2"
 }
-4ea404779b6930a
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -153,35 +154,23 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-Assertion Passed:Partial name update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-Wql0j7Cz2OxtOmnKg3C+qLlPpyE"
-Date: Mon, 03 Oct 2022 01:28:28 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=ad841784594213a
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "23aa3d2d6ab2490"
+    "totalprice": 111,
+    "depositpaid": true
 }
-23aa3d2d6ab2490
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-jf6kJhIfvRS1m4bOiX+T1OkaxKc"
-Date: Mon, 03 Oct 2022 01:28:30 GMT
-Via: 1.1 vegur
-
-{
-    "token": "ad841784594213a"
-}
-ad841784594213a
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -203,35 +192,23 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-Assertion Passed:Partial price update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-BT31B4xsV43vD609e/LETElRevc"
-Date: Mon, 03 Oct 2022 01:28:34 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=ed1a67e7c6e3d71
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "3d45d1c66565944"
+    "totalprice": 112,
+    "depositpaid": false
 }
-3d45d1c66565944
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-9T67xUWNYY3WyF2nQOyfAkWfUNE"
-Date: Mon, 03 Oct 2022 01:28:36 GMT
-Via: 1.1 vegur
-
-{
-    "token": "ed1a67e7c6e3d71"
-}
-ed1a67e7c6e3d71
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -253,35 +230,25 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-Assertion Passed:Partial price update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-NgqJLCw3TMnPikoqDzLc7cHxJSE"
-Date: Mon, 03 Oct 2022 01:28:40 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=2471e4388f69b70
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "c36fac329ac2346"
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2018-01-02"
+    }
 }
-c36fac329ac2346
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-ITmXETIKkd7iWiYxfN7PBHbzI7E"
-Date: Mon, 03 Oct 2022 01:28:41 GMT
-Via: 1.1 vegur
-
-{
-    "token": "2471e4388f69b70"
-}
-2471e4388f69b70
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -303,35 +270,25 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-Assertion Passed:Partial booking dates update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-gVkJbdyLamwYzMBeEezrnXEyOQg"
-Date: Mon, 03 Oct 2022 01:28:44 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=e711452d4d5f468
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "29f0ec40f593ade"
+    "bookingdates": {
+        "checkin": "2020-01-02",
+        "checkout": "2020-01-04"
+    }
 }
-29f0ec40f593ade
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-eoiM5q3PAFPXsmnllOzGARF/k/U"
-Date: Mon, 03 Oct 2022 01:28:47 GMT
-Via: 1.1 vegur
-
-{
-    "token": "e711452d4d5f468"
-}
-e711452d4d5f468
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -353,35 +310,22 @@ Via: 1.1 vegur
     },
     "additionalneeds": "Breakfast"
 }
-Assertion Passed:Partial booking dates update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-MUySuFM5A25NiN4ma3KfPHGtGjQ"
-Date: Mon, 03 Oct 2022 01:28:51 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=dd5a9ca3aa64765
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "45db359935b1461"
+    "additionalneeds": "dinner"
 }
-45db359935b1461
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-nyorX2OwJgP4Hywq5j8gxnmoP4c"
-Date: Mon, 03 Oct 2022 01:28:53 GMT
-Via: 1.1 vegur
-
-{
-    "token": "dd5a9ca3aa64765"
-}
-dd5a9ca3aa64765
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -403,35 +347,22 @@ Via: 1.1 vegur
     },
     "additionalneeds": "dinner"
 }
-Assertion Passed:Partial additonal need update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-olvgsgPiu2DiT2A2wPqpzrm+4m8"
-Date: Mon, 03 Oct 2022 01:28:56 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=ed08ff8b0b41fb6
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "c2e4c5a331c9bbf"
+    "additionalneeds": "lunch"
 }
-c2e4c5a331c9bbf
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-VJfio7KFnaXS7QLIo7P5ft1waWk"
-Date: Mon, 03 Oct 2022 01:28:58 GMT
-Via: 1.1 vegur
-
-{
-    "token": "ed08ff8b0b41fb6"
-}
-ed08ff8b0b41fb6
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -453,21 +384,23 @@ Via: 1.1 vegur
     },
     "additionalneeds": "lunch"
 }
-Assertion Passed:Partial additonal need update Working successfully
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-tqF90ycQ7IUCOH5Le3BJVkTlLQw"
-Date: Mon, 03 Oct 2022 01:29:01 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=3c06b322789518axyz
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "3c06b322789518a"
+    "firstname": "firstname",
+    "lastname": "lastname"
 }
-3c06b322789518a
 HTTP/1.1 403 Forbidden
 Server: Cowboy
 Connection: keep-alive
@@ -479,21 +412,25 @@ Date: Mon, 03 Oct 2022 01:29:02 GMT
 Via: 1.1 vegur
 
 Forbidden
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-baPpfpl8CNgxiM8HcI8vBzBkGtU"
-Date: Mon, 03 Oct 2022 01:29:04 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=34d0509b6edb6fcxyz
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "34d0509b6edb6fc"
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2018-02-01"
+    }
 }
-34d0509b6edb6fc
 HTTP/1.1 403 Forbidden
 Server: Cowboy
 Connection: keep-alive
@@ -505,21 +442,25 @@ Date: Mon, 03 Oct 2022 01:29:05 GMT
 Via: 1.1 vegur
 
 Forbidden
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-CFr3zL7YBw4LpyOShQc3R6B0ucU"
-Date: Mon, 03 Oct 2022 01:29:06 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=005dae30b8c6b32xyz
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "005dae30b8c6b32"
+    "bookingdates": {
+        "checkin": "111",
+        "checkout": "true"
+    }
 }
-005dae30b8c6b32
 HTTP/1.1 403 Forbidden
 Server: Cowboy
 Connection: keep-alive
@@ -531,21 +472,22 @@ Date: Mon, 03 Oct 2022 01:29:08 GMT
 Via: 1.1 vegur
 
 Forbidden
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-8zsoAO9YzbwMe3IGckC5BIJ9BtU"
-Date: Mon, 03 Oct 2022 01:29:09 GMT
-Via: 1.1 vegur
-
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=7650bd276ab42b8xyz
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "token": "7650bd276ab42b8"
+    "additionalneeds": "breakfast"
 }
-7650bd276ab42b8
 HTTP/1.1 403 Forbidden
 Server: Cowboy
 Connection: keep-alive
@@ -557,21 +499,20 @@ Date: Mon, 03 Oct 2022 01:29:11 GMT
 Via: 1.1 vegur
 
 Forbidden
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-9U+IDvME1aOVusdCrSo3Mch7nFk"
-Date: Mon, 03 Oct 2022 01:29:12 GMT
-Via: 1.1 vegur
-
-{
-    "token": "afe9ba787dc8d22"
-}
-afe9ba787dc8d22
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=afe9ba787dc8d22
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+pojo.PartialUpdateBookingDates@3aca2579dummydata
 HTTP/1.1 400 Bad Request
 Server: Cowboy
 Connection: keep-alive
@@ -583,21 +524,20 @@ Date: Mon, 03 Oct 2022 01:29:14 GMT
 Via: 1.1 vegur
 
 Bad Request
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-NFnFY6lv0rk2yhLxT6cy/vEdnSw"
-Date: Mon, 03 Oct 2022 01:29:15 GMT
-Via: 1.1 vegur
-
-{
-    "token": "fe463fa036e91c0"
-}
-fe463fa036e91c0
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=fe463fa036e91c0
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+pojo.PartialUpdateBookingDates@508f4bb5dummydata
 HTTP/1.1 400 Bad Request
 Server: Cowboy
 Connection: keep-alive
@@ -609,21 +549,20 @@ Date: Mon, 03 Oct 2022 01:29:17 GMT
 Via: 1.1 vegur
 
 Bad Request
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-bvDGJrGqnL0JwgcNyg0znZUEf+0"
-Date: Mon, 03 Oct 2022 01:29:19 GMT
-Via: 1.1 vegur
-
-{
-    "token": "3618f0862d5f5fd"
-}
-3618f0862d5f5fd
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=3618f0862d5f5fd
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+pojo.PartialUpdateBookingDates@388e4c25dummydata
 HTTP/1.1 400 Bad Request
 Server: Cowboy
 Connection: keep-alive
@@ -635,21 +574,20 @@ Date: Mon, 03 Oct 2022 01:29:20 GMT
 Via: 1.1 vegur
 
 Bad Request
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-ebq/q2S618MDn4C0kXL+Qvl5Z/s"
-Date: Mon, 03 Oct 2022 01:29:22 GMT
-Via: 1.1 vegur
-
-{
-    "token": "84f8bfbb7cf080d"
-}
-84f8bfbb7cf080d
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=84f8bfbb7cf080d
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+pojo.PartialUpdateAdditionalNeeds@2e19b30dummydata
 HTTP/1.1 400 Bad Request
 Server: Cowboy
 Connection: keep-alive
@@ -661,21 +599,19 @@ Date: Mon, 03 Oct 2022 01:29:24 GMT
 Via: 1.1 vegur
 
 Bad Request
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-9gK/VrygYYeDJC4XbQDC7Yrcjeg"
-Date: Mon, 03 Oct 2022 01:29:25 GMT
-Via: 1.1 vegur
-
-{
-    "token": "4b6708bc6a1bf33"
-}
-4b6708bc6a1bf33
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=4b6708bc6a1bf33
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 201 Created
 Server: Cowboy
 Connection: keep-alive
@@ -687,6 +623,19 @@ Date: Mon, 03 Oct 2022 01:29:28 GMT
 Via: 1.1 vegur
 
 Created
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=4b6708bc6a1bf33
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 404 Not Found
 Server: Cowboy
 Connection: keep-alive
@@ -698,20 +647,19 @@ Date: Mon, 03 Oct 2022 01:29:29 GMT
 Via: 1.1 vegur
 
 Not Found
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-c+vm0hR5Np+2fYkmNqui5PqkOBE"
-Date: Mon, 03 Oct 2022 01:29:32 GMT
-Via: 1.1 vegur
-
-{
-    "token": "03065f255edfc46"
-}
-03065f255edfc46
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=03065f255edfc46xyz
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 403 Forbidden
 Server: Cowboy
 Connection: keep-alive
@@ -723,21 +671,19 @@ Date: Mon, 03 Oct 2022 01:29:34 GMT
 Via: 1.1 vegur
 
 Forbidden
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-l4d6nlsHUIRpXst0ONwWqCEt/1o"
-Date: Mon, 03 Oct 2022 01:29:35 GMT
-Via: 1.1 vegur
-
-{
-    "token": "aebe886e82a4776"
-}
-aebe886e82a4776
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/3958
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=aebe886e82a4776
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 400 Bad Request
 Server: Cowboy
 Connection: keep-alive
@@ -749,21 +695,19 @@ Date: Mon, 03 Oct 2022 01:29:38 GMT
 Via: 1.1 vegur
 
 Bad Request
-Status code Assertion Passed 
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-mytlEYbj4vyXjSSuRWEEJJrIViY"
-Date: Mon, 03 Oct 2022 01:29:39 GMT
-Via: 1.1 vegur
-
-{
-    "token": "e1b37ae8d5fda22"
-}
-e1b37ae8d5fda22
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/xyzzz
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=e1b37ae8d5fda22
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 405 Method Not Allowed
 Server: Cowboy
 Connection: keep-alive
@@ -775,7 +719,18 @@ Date: Mon, 03 Oct 2022 01:29:42 GMT
 Via: 1.1 vegur
 
 Method Not Allowed
-Status code Assertion Passed 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -11957,7 +11912,18 @@ Via: 1.1 vegur
         "bookingid": 1786
     }
 ]
-Assertion passed :Get allbooking ids response contains json array of objects
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 500 Internal Server Error
 Server: Cowboy
 Connection: keep-alive
@@ -11969,7 +11935,18 @@ Date: Mon, 03 Oct 2022 01:29:47 GMT
 Via: 1.1 vegur
 
 Internal Server Error
-Status code Assertion Passed 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 404 Not Found
 Server: Cowboy
 Connection: keep-alive
@@ -11981,7 +11958,19 @@ Date: Mon, 03 Oct 2022 01:29:49 GMT
 Via: 1.1 vegur
 
 Not Found
-Status code Assertion Passed 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/?firstname=&lastname=
+Proxy:			<none>
+Request params:	<none>
+Query params:	firstname=
+				lastname=
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -11997,7 +11986,19 @@ Via: 1.1 vegur
         "bookingid": 972
     }
 ]
-Assertion passed :Get allbooking ids response contains json array of objects
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/?firstname=test1&lastname=test2
+Proxy:			<none>
+Request params:	<none>
+Query params:	firstname=test1
+				lastname=test2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -12013,7 +12014,19 @@ Via: 1.1 vegur
         "bookingid": 3506
     }
 ]
-Assertion passed :Get allbooking ids response contains json array of objects
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/?checkin=2018-01-01&checkout=2018-01-02
+Proxy:			<none>
+Request params:	<none>
+Query params:	checkin=2018-01-01
+				checkout=2018-01-02
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -12027,6 +12040,19 @@ Via: 1.1 vegur
 [
     
 ]
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/?checkin=2018-02-01&checkout=2018-03-02
+Proxy:			<none>
+Request params:	<none>
+Query params:	checkin=2018-02-01
+				checkout=2018-03-02
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 200 OK
 Server: Cowboy
 Connection: keep-alive
@@ -12040,6 +12066,19 @@ Via: 1.1 vegur
 [
     
 ]
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/?firstname=zzzz&lastname=xxxx
+Proxy:			<none>
+Request params:	<none>
+Query params:	firstname=zzzz
+				lastname=xxxx
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 404 Not Found
 Server: Cowboy
 Connection: keep-alive
@@ -12051,7 +12090,19 @@ Date: Mon, 03 Oct 2022 01:29:58 GMT
 Via: 1.1 vegur
 
 Not Found
-Status code Assertion Passed 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/?checkin=2018-01-01&checkout=2018-02-01
+Proxy:			<none>
+Request params:	<none>
+Query params:	checkin=2018-01-01
+				checkout=2018-02-01
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 404 Not Found
 Server: Cowboy
 Connection: keep-alive
@@ -12063,54 +12114,3 @@ Date: Mon, 03 Oct 2022 01:29:59 GMT
 Via: 1.1 vegur
 
 Not Found
-Status code Assertion Passed 
-[32m[1m????????????????????????????????????????????????????????????????????????????[0m
-[32m[1m?[0m View your Cucumber Report at:                                            [32m[1m?[0m
-[32m[1m?[0m [1m[36m[4mhttps://reports.cucumber.io/reports/2960438e-9eb3-43e4-9378-8440d76ae7e5[0m [32m[1m?[0m
-[32m[1m?[0m                                                                          [32m[1m?[0m
-[32m[1m?[0m [1mThis report will self-destruct in 24h.[0m                                   [32m[1m?[0m
-[32m[1m?[0m Keep reports forever: [4m[1m[36mhttps://reports.cucumber.io/profile[0m                [32m[1m?[0m
-[32m[1m????????????????????????????????????????????????????????????????????????????[0mReporturl :https://reports.cucumber.io/reports/2960438e-9eb3-43e4-9378-8440d76ae7e5
-=====Email Sent=====
-[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 128.515 s - in cucumber.Options.TestRunner
-[INFO] 
-[INFO] Results:
-[INFO] 
-[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
-[INFO] 
-[INFO] 
-[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default) @ restful-booker-api-automation-framework ---
-[INFO] Skipping execution of surefire because it has already been run for this configuration
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ restful-booker-api-automation-framework ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/main/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ restful-booker-api-automation-framework ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ restful-booker-api-automation-framework ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ restful-booker-api-automation-framework ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default-test) @ restful-booker-api-automation-framework ---
-[INFO] Skipping execution of surefire because it has already been run for this configuration
-[INFO] 
-[INFO] --- maven-surefire-plugin:3.0.0-M3:test (default) @ restful-booker-api-automation-framework ---
-[INFO] Skipping execution of surefire because it has already been run for this configuration
-[INFO] 
-[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ restful-booker-api-automation-framework ---
-[INFO] 
-[INFO] --- maven-cucumber-reporting:5.0.0:generate (execution) @ restful-booker-api-automation-framework ---
-[INFO] About to generate Cucumber report.
-Oct 03, 2022 7:00:10 AM net.masterthought.cucumber.ReportParser parseJsonFiles
-INFO: File '/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/jsonReports/cucumber-report.json' contains 1 features
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  02:13 min
-[INFO] Finished at: 2022-10-03T07:00:11+05:30
-[INFO] ------------------------------------------------------------------------

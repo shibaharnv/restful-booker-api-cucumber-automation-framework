@@ -1,16 +1,5 @@
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/GetBookingIdsWithFilters.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/CreateToken.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/GetBookingByID.java
 /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/resources/Utils.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/GetBookingIdsWithOutFilter.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/DeleteBookings.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/NestedJsonExtraction.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/RequestSpecificationtest.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/CreateBookingTestClass.java
+/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/cucumber/Options/TestRunner.java
 /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/stepDefinitions/Hooks.java
 /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/stepDefinitions/StepDefinition.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/cucumber/Options/TestRunner.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/TestClass.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/PatchPartialUpdate.java
-/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/bdd/apiFramework/GetBookingIds.java
 /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/src/test/java/resources/TestDataBuild.java

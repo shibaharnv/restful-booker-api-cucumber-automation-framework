@@ -21,7 +21,7 @@ public class Utils {
 
         if(req==null) {
 
-            PrintStream log = new PrintStream(new FileOutputStream("logs.txt"));
+            PrintStream log = new PrintStream(new FileOutputStream("src/test/java/logs/logs.txt"));
 
             req = new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl"))
                     .addFilter(RequestLoggingFilter.logRequestTo(log))
@@ -71,6 +71,27 @@ public class Utils {
         JsonPath   js = new JsonPath(resp);
         return js.get(key).toString();
     }
+
+    public boolean isStringOnlyAlphabet(String str)
+    {
+
+        return ((str != null) && (!str.equals(""))
+                && (str.matches("^[a-zA-Z]*$")));
+    }
+
+    public boolean isStringOnlyDate(String str)
+    {
+
+        return str.matches("([0-9]{4})-([0-9]{2})-([0-9]{2})");
+    }
+
+    public boolean isStringOnlyDigits(String str)
+    {
+
+        return str.matches("[0-9]+" );
+    }
+
+
 
 
 

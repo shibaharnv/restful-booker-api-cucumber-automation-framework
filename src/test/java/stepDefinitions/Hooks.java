@@ -14,7 +14,7 @@ public class Hooks {
 
     public static String checkOutDate="";
 
-    @Before("@PartialUpdate or @DeleteBooking or @GetBookingIds")
+    @Before("@PartialUpdate or @DeleteBooking or @GetBookingIds or @PartialUpdateNegative or @GetBookingDetailWithID")
     public void beforeScenario() throws IOException
     {		//execute this code only when place id is null
         //write a code that will give you place id
