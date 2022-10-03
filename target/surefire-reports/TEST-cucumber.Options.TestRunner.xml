@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumber.Options.TestRunner" time="126.145" tests="31" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumber.Options.TestRunner" time="123.982" tests="31" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/surefire/surefirebooter8243039960626942683.jar /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/surefire 2022-10-03T07-12-45_298-jvmRun1 surefire1563961565064812690tmp surefire_014163599013045812749tmp"/>
+    <property name="sun.java.command" value="/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/surefire/surefirebooter17482260019850996766.jar /Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/surefire 2022-10-03T07-16-20_986-jvmRun1 surefire13345012972734323005tmp surefire_03626530295448579889tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/test-classes:/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/classes:/Users/snagarajan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/snagarajan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/snagarajan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4.jar:/Users/snagarajan/.m2/repository/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.jar:/Users/snagarajan/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar:/Users/snagarajan/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/snagarajan/.m2/repository/org/json/json/20220320/json-20220320.jar:/Users/snagarajan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/snagarajan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/snagarajan/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/snagarajan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3.jar:/Users/snagarajan/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/snagarajan/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/snagarajan/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/snagarajan/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/snagarajan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-java/7.8.0/cucumber-java-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-core/7.8.0/cucumber-core-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-gherkin/7.8.0/cucumber-gherkin-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.8.0/cucumber-gherkin-messages-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/messages/19.1.2/messages-19.1.2.jar:/Users/snagarajan/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/datatable/7.8.0/datatable-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-plugin/7.8.0/cucumber-plugin-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/docstring/7.8.0/docstring-7.8.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/html-formatter/20.1.0/html-formatter-20.1.0.jar:/Users/snagarajan/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/snagarajan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/snagarajan/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/Users/snagarajan/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/Users/snagarajan/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/snagarajan/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/snagarajan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/snagarajan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/snagarajan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/snagarajan/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/snagarajan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/snagarajan/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/snagarajan/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/snagarajan/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/Users/snagarajan/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/snagarajan/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/Users/snagarajan/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/Users/snagarajan/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="enableEmail" value="YES"/>
-    <property name="surefire.real.class.path" value="/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/surefire/surefirebooter8243039960626942683.jar"/>
+    <property name="surefire.real.class.path" value="/Users/snagarajan/Documents/mediaserverTesting/restful-booker-api-automation-framework/target/surefire/surefirebooter17482260019850996766.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
     <property name="user.name" value="snagarajan"/>
@@ -61,35 +61,35 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Create a new booking" classname="Validating Booker Apis" time="4.793"/>
-  <testcase name="Get the booking details with booking id" classname="Validating Booker Apis" time="2.068"/>
-  <testcase name="Validate paritalUpdateBooking with names for booker API #1" classname="Validating Booker Apis" time="3.183"/>
-  <testcase name="Validate paritalUpdateBooking with names for booker API #2" classname="Validating Booker Apis" time="3.625"/>
-  <testcase name="Validate paritalUpdateBooking with prices for booker API #1" classname="Validating Booker Apis" time="6.676"/>
-  <testcase name="Validate paritalUpdateBooking with prices for booker API #2" classname="Validating Booker Apis" time="5.699"/>
-  <testcase name="Validate paritalUpdateBooking with booking dates for booker API #1" classname="Validating Booker Apis" time="4.494"/>
-  <testcase name="Validate paritalUpdateBooking with booking dates for booker API #2" classname="Validating Booker Apis" time="5.182"/>
-  <testcase name="Validate paritalUpdateBooking with additional needs for booker API #1" classname="Validating Booker Apis" time="5.692"/>
-  <testcase name="Validate paritalUpdateBooking with additional needs for booker API #2" classname="Validating Booker Apis" time="6.468"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #1" classname="Validating Booker Apis" time="3.549"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #2" classname="Validating Booker Apis" time="4.026"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #3" classname="Validating Booker Apis" time="4.781"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #4" classname="Validating Booker Apis" time="4.249"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #5" classname="Validating Booker Apis" time="3.642"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #6" classname="Validating Booker Apis" time="2.933"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #7" classname="Validating Booker Apis" time="3.213"/>
-  <testcase name="Validate different error status codes paritalUpdateBooking #8" classname="Validating Booker Apis" time="4.029"/>
-  <testcase name="Validate delete booking functionality #1" classname="Validating Booker Apis" time="5.38"/>
-  <testcase name="Validate delete booking functionality #2" classname="Validating Booker Apis" time="4.611"/>
-  <testcase name="Validate delete booking functionality #3" classname="Validating Booker Apis" time="3.685"/>
-  <testcase name="Validate delete booking functionality #4" classname="Validating Booker Apis" time="4.285"/>
-  <testcase name="Get all the Bookingids without filter #1" classname="Validating Booker Apis" time="3.214"/>
-  <testcase name="Get all the Bookingids without filter #2" classname="Validating Booker Apis" time="1.512"/>
-  <testcase name="Get all the Bookingids without filter #3" classname="Validating Booker Apis" time="1.984"/>
-  <testcase name="Get all the Bookingids with name filter #1" classname="Validating Booker Apis" time="1.543"/>
-  <testcase name="Get all the Bookingids with name filter #2" classname="Validating Booker Apis" time="2.589"/>
-  <testcase name="Get all the Bookingids with filter #1" classname="Validating Booker Apis" time="1.83"/>
-  <testcase name="Get all the Bookingids with filter #2" classname="Validating Booker Apis" time="1.871"/>
-  <testcase name="Get all the Bookingids with filter #3" classname="Validating Booker Apis" time="2.265"/>
-  <testcase name="Get all the Bookingids with filter #4" classname="Validating Booker Apis" time="1.988"/>
+  <testcase name="Create a new booking" classname="Validating Booker Apis" time="5.421"/>
+  <testcase name="Get the booking details with booking id" classname="Validating Booker Apis" time="1.826"/>
+  <testcase name="Validate paritalUpdateBooking with names for booker API #1" classname="Validating Booker Apis" time="4.035"/>
+  <testcase name="Validate paritalUpdateBooking with names for booker API #2" classname="Validating Booker Apis" time="3.156"/>
+  <testcase name="Validate paritalUpdateBooking with prices for booker API #1" classname="Validating Booker Apis" time="4.993"/>
+  <testcase name="Validate paritalUpdateBooking with prices for booker API #2" classname="Validating Booker Apis" time="5.504"/>
+  <testcase name="Validate paritalUpdateBooking with booking dates for booker API #1" classname="Validating Booker Apis" time="5.452"/>
+  <testcase name="Validate paritalUpdateBooking with booking dates for booker API #2" classname="Validating Booker Apis" time="5.981"/>
+  <testcase name="Validate paritalUpdateBooking with additional needs for booker API #1" classname="Validating Booker Apis" time="6.187"/>
+  <testcase name="Validate paritalUpdateBooking with additional needs for booker API #2" classname="Validating Booker Apis" time="4.556"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #1" classname="Validating Booker Apis" time="2.905"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #2" classname="Validating Booker Apis" time="3.448"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #3" classname="Validating Booker Apis" time="4.12"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #4" classname="Validating Booker Apis" time="3.87"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #5" classname="Validating Booker Apis" time="4.016"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #6" classname="Validating Booker Apis" time="4.302"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #7" classname="Validating Booker Apis" time="3.686"/>
+  <testcase name="Validate different error status codes paritalUpdateBooking #8" classname="Validating Booker Apis" time="3.08"/>
+  <testcase name="Validate delete booking functionality #1" classname="Validating Booker Apis" time="5.317"/>
+  <testcase name="Validate delete booking functionality #2" classname="Validating Booker Apis" time="3.398"/>
+  <testcase name="Validate delete booking functionality #3" classname="Validating Booker Apis" time="4.145"/>
+  <testcase name="Validate delete booking functionality #4" classname="Validating Booker Apis" time="3.615"/>
+  <testcase name="Get all the Bookingids without filter #1" classname="Validating Booker Apis" time="2.392"/>
+  <testcase name="Get all the Bookingids without filter #2" classname="Validating Booker Apis" time="1.687"/>
+  <testcase name="Get all the Bookingids without filter #3" classname="Validating Booker Apis" time="1.947"/>
+  <testcase name="Get all the Bookingids with name filter #1" classname="Validating Booker Apis" time="1.504"/>
+  <testcase name="Get all the Bookingids with name filter #2" classname="Validating Booker Apis" time="1.798"/>
+  <testcase name="Get all the Bookingids with filter #1" classname="Validating Booker Apis" time="2.912"/>
+  <testcase name="Get all the Bookingids with filter #2" classname="Validating Booker Apis" time="2.096"/>
+  <testcase name="Get all the Bookingids with filter #3" classname="Validating Booker Apis" time="1.982"/>
+  <testcase name="Get all the Bookingids with filter #4" classname="Validating Booker Apis" time="1.441"/>
 </testsuite>
