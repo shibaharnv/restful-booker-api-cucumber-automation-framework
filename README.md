@@ -65,6 +65,19 @@ Test results report link will be sent to the mentioned email id.
 ```mvn -Dcucumber.filter.tags="@CreateBooking" test verify --log-file mavenlogs.txt -DRecipientList="shibaharn@gmail.com"```
 
 
+```bash
+  - Tags.                       -Usage
+  CreateBooking                Create the booking
+  GetBookingDetailWithID       Fetching the booking details with id
+  PartialUpdate                Partially updating the booking
+  DeleteBooking                Delete the booking with id
+  GetBookingIds                Fetching all the booking ids
+  PartialUpdateNegative        Validating different errorcodes for partialupdate
+  DeleteBookingNegative        Validating different errorcodes for deletebooking
+  GetBookingIdsNegative        Validating different errorcodes for getbookingIDs
+  GetAllBookingIdsNegative     Checking the error codes while fetching all ids
+  Regression                   All the testcases 
+```
 
 ## Automatic email Generation
 
