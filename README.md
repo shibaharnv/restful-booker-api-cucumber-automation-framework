@@ -85,7 +85,12 @@ Once the execution is done you must be receiving an email with test results link
 
 ![email](https://user-images.githubusercontent.com/65211677/193441907-1cbc4e07-af7f-4049-8853-753d8251fe25.png)
 
-## Detailed report in project directory
+After clicking the link you should be able to see the report .please refer below screenshot
+
+![Screenshot 2022-10-03 at 07 00 58](https://user-images.githubusercontent.com/65211677/193486845-829fba65-c3eb-43c6-93b1-558bb0235ee2.png)
+
+
+## Another Detailed report in project directory
 
 Detailed report can be found in /restful-booker-api-automation-framework/target/cucumber-html-reports location
 
